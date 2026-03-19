@@ -45,6 +45,8 @@ default_data = pd.DataFrame({
     ]
 })
 
+default_data.index = range(1, len(default_data) + 1)
+
 edited_data = st.data_editor(
     default_data,
     num_rows="fixed",
